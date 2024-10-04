@@ -71,3 +71,14 @@ c = np.percentile(a, 50)
 print(b)
 print(c)
 
+#14 Solution of a system of linear equations 2x+3y=12,4x−y=5 => x = 27/14, y = 19/7
+a = np.array([[2, 3], [4, -1]])
+b = np.array([12, 5])
+solution = np.linalg.solve(a, b)
+print(solution)
+
+#15 Determinant of matrix - 1 * 3 - 2 * 7 = -11
+a = np.array([[1, 2], [7, 3]])
+d = np.linalg.det(a)
+print(d)
+
